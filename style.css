@@ -15,3 +15,8 @@
   flex: 1;
   padding: 15px;
 }
+
+p {
+  margin-top: 2px;    /* Reduces space above the paragraph */
+  margin-bottom: 2px; /* Reduces space below the paragraph */
+}

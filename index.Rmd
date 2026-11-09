@@ -1,20 +1,20 @@
----
-title: "About Me"
----
-
 ```{=html}
 <div class="website-container">
 
   <div class="left-sidebar">
     <img src="headshot.jpg" alt = "Photo of Abigail Dittmar">
-    <h3>Contact</h3>
+    <h3>Abigail Dittmar</h3>
+    <p>PhD Candidate</p>
+    <p>Underwood Inouye Lab</p>
+    <p>Florida State University</p>
     <p><strong>Email:</strong> adittmar@fsu.edu</p>
-    <a href="Abigail Dittmar Curriculum Vitae">CV</a>
   </div>
 
   <div class="main-content">
-    # Main Page Title
-    Your regular R Markdown content goes here...
+    <h1>About Me</h1>
+    <p>I am a theoretical ecologist who is interested in the spatial and temporal dynamics of populations, with a focus on plant-insect interactions. I am particularly interested in...</p>
+    <br>
+    <p> I am a PhD candidate working with <a href="https://underwood-inouye-lab.weebly.com/"> Nora Underwood and Brian Inouye</a> at Florida State University. I completed my BA at Cornell University     working with <a href="https://blogs.cornell.edu/thaler/"> Jennifer Thaler</a>.
   </div>
 
 </div>
