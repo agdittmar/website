@@ -8,6 +8,8 @@
     <p>Underwood Inouye Lab</p>
     <p>Florida State University</p>
     <p><strong>Email:</strong> adittmar@fsu.edu</p>
+    <p><a href="https://scholar.google.com/citations?user=gh0p3BMAAAAJ&hl=en&oi=ao"> Google Scholar</a></p>
+    <p><a href="https://www.researchgate.net/profile/Abigail-Dittmar?ev=hdr_xprf"> ResearchGate</a></p>
   </div>
 
   <div class="main-content">

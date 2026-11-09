@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>cv.knit</title>
+
+<script src="site_libs/header-attrs-2.32/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Abigail Dittmar</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="cv.html">CV</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div id="curriculum-vitae" class="section level1">
+<h1>Curriculum Vitae<br><br></h1>
+<div id="education" class="section level3">
+<h3>Education</h3>
+<div id="florida-state-university" class="section level5">
+<h5>Florida State University<br></h5>
+<p><strong>Present</strong> Ph.D. in Biological Science, Area: Ecology
+and Evolution<br> Committee: Nora Underwood (chair), Brian Inouye
+(chair), Michael Cortez, Alice Winn, Emily DuVal, Nicholas Cogan</p>
+<p><strong>2023</strong> M.S. in Biological Science, Area: Ecology and
+Evolution<br><br></p>
+</div>
+<div id="cornell-university" class="section level5">
+<h5>Cornell University</h5>
+<p><strong>2020</strong> B.A. in Biological Sciences, concentration in
+Ecology and Evolutionary Biology<br> Advisors: Jennifer Thaler and
+Nicholas Aflitto<br> Magna Cum Laude<br><br><br></p>
+</div>
+</div>
+<div id="publications" class="section level3">
+<h3>Publications</h3>
+<div id="peer-reviewed-publications-and-pre-prints"
+class="section level5">
+<h5>Peer-reviewed publications and pre-prints<br></h5>
+<p><strong>Dittmar, A.G.</strong>, Underwood, N., and Inouye, B.D.
+(2026). Herbivore stage-structure modifies effects of induced resistance
+on insect population dynamics. <em>In revision, Journal of Animal
+Ecology</em>.<br> Aflitto, N.C., <strong>Dittmar, A.G.</strong>, Ugine,
+T.A., and Thaler, J.S. (2023). Semiochemical release and ontogenetic
+changes in a primary scent gland of <em>Podisus maculiventris</em>.
+<em>Journal of Chemical Ecology</em> 49:428-436.<br><br></p>
+</div>
+<div id="publications-in-submission-review-or-in-preparation"
+class="section level5">
+<h5>Publications in submission, review, or in preparation<br></h5>
+<p><strong>Dittmar, A.G.</strong>, M’Gonigle, L.K., and Inouye, B.D.
+Neighborhood effects and competition alter dispersion and coexistence of
+plant communities.<br> <strong>Dittmar, A.G.</strong>, et al. Signal or
+noise: is variaiton in herbivory among plants eriven by biology or
+chance?<br> Galmán, A. et al. Beyond the mean: how plant growth-defense
+strategies influence intrapopulation variation in
+herbivory.<br><br><br></p>
+</div>
+</div>
+<div id="grants-fellowships-and-honors" class="section level3">
+<h3>Grants, Fellowships, and Honors</h3>
+<div id="grants" class="section level5">
+<h5>Grants</h5>
+<p><strong>2023</strong> FSU Seed Grant (co-author, PI: Brian Inouye),
+$29,928<br><br></p>
+</div>
+<div id="fellowships" class="section level5">
+<h5>Fellowships</h5>
+<p><strong>2020</strong> FSU Legacy Fellowship, $50,000<br><br></p>
+</div>
+<div id="awards-and-honors" class="section level5">
+<h5>Awards and Honors</h5>
+<p><strong>2016-2019</strong> Dean’s List, Cornell
+University<br><br><br></p>
+</div>
+</div>
+<div id="presentations" class="section level3">
+<h3>Presentations</h3>
+<div id="invited-oral-presentations" class="section level5">
+<h5>Invited Oral Presentations</h5>
+<p><strong>Dittmar, A.G.</strong>, Underwood, N., and Inouye, B.D.
+(2023, Sept.). Modeling stage-specific effects of induced resistance on
+herbivore populations. University of Georgia Odum School of Ecology
+Theory Lunch.<br><br></p>
+</div>
+<div id="oral-presentations" class="section level5">
+<h5>Oral Presentations</h5>
+<p><strong>Dittmar, A.G.</strong>, Abbott, K.C., Elderd, B.D., and
+Inouye, B.D. (2026, Aug). Signal or noise: is variation in herbivory
+among plants driven by biology or chance? Ecological Society of America
+annual meeting.<br> <strong>Dittmar, A.G.</strong>, Underwood, N., and
+Inouye, B.D. (2023, Sept.). Modeling stage-specific effects of induced
+resistance on herbivore populations. Ecological Society of America
+annual meeting.<br> <strong>Dittmar, A.G.</strong>, M’Gonigle, L.K.,
+Underwood, N., and Inouye, B.D.. (2022, Aug.). Neighborhood effects and
+competition alter dispersion and coexistence. Ecological Society of
+America annual meeting.<br><br></p>
+</div>
+<div id="poster-presentations" class="section level5">
+<h5>Poster Presentations</h5>
+<p><strong>Dittmar, A.G.</strong>, Underwood, N., and Inouye, B.D.
+(2024, June). Modeling stage-specific effects of induced resistance on
+herbivore populations. Society of Industrial and Applied Mathematics –
+Life Sciences Meeting.<br><br><br></p>
+</div>
+</div>
+<div id="teaching-and-mentoring" class="section level3">
+<h3>Teaching and Mentoring</h3>
+<div id="mentorship" class="section level5">
+<h5>Mentorship</h5>
+<p>Anna Chilton (2026)<br><br></p>
+</div>
+<div id="teaching" class="section level5">
+<h5>Teaching</h5>
+<p><strong>Florida State University, 2020-present</strong><br>
+<strong><em>Lead TA</em></strong><br> Animal Diversity Laboratory (ZOO
+3141L) - 1 semester<br> <strong><em>Lab Instructor</em></strong><br>
+Biological Science II Laboratory (BSC 2011L) - 3 semesters<br> Animal
+Diversity Laboratory (ZOO 3141L) - 4 semesters<br> <strong><em>Teaching
+Assistant</em></strong><br> General Ecology (PCB 3043) - 1 semester<br>
+Experimental Biology Laboratory, Plant-Insect Interactions (BSC 3402L) -
+1 semester<br> Plants and Society (BOT 4802) - 1 semester<br> Field
+Botany (BOT 3143c) - 1 semester<br><br></p>
+</div>
+<div id="advising" class="section level5">
+<h5>Advising</h5>
+<p>First-Year Student Advisor (2019-2020), Cornell University<br>
+College of Arts and Sciences Ambassador (2018-2020), Cornell
+University<br><br><br></p>
+</div>
+</div>
+<div id="service-and-outreach" class="section level3">
+<h3>Service and Outreach</h3>
+<div id="scientific-service" class="section level5">
+<h5>Scientific Service</h5>
+<p><strong>Reviewing Activity for Journals</strong><br> Journal of
+Ecology (2026)<br> Proceedings B (2025)<br> Forest Ecology and
+Management (2020)<br><br></p>
+</div>
+<div id="departmental-service" class="section level5">
+<h5>Departmental Service</h5>
+<p><strong>EERDG Historian</strong> (2023-2024), Florida State
+University<br><br></p>
+</div>
+<div id="science-outreach" class="section level5">
+<h5>Science Outreach</h5>
+<p><strong>K-12 School Visists, Scientists in Every Florida
+School</strong> (2022-2025)<br> Okaloosa STEMM Academy (Spring 2023,
+2024), Topic: Local Florida Ecosystems, Ages: middle school<br> Florida
+A&amp;M University Developmental Research School (Spring 2024, 2025),
+Topic: Biodiversity and Evolution, Ages: high school<br> Crawfordville
+Elementary School (Fall 2024), Topic: Plant Adaptations, Ages: third
+grade<br> Seminole County, FL (Spring 2022), Topic: Food Plant
+Adaptations, Ages: third grade<br></p>
+<p><strong>Letters to a Pre-Scientist</strong> (2025-2026)<br></p>
+<p><strong>Tallahassee Science Festival</strong>
+(2021-2023,2025)<br></p>
+<p><strong>Encouraging Young Engineers and Scientists</strong>
+(2018-2019)<br></p>
+<p><strong>Expanding Your Horizons</strong> (2018-2019)<br></p>
+<p><strong>Insectapalooza</strong> (2017-2018)</p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
