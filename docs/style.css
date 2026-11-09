@@ -1,0 +1,17 @@
+.website-container {
+  display: flex;
+  gap: 20px;
+}
+
+.left-sidebar {
+  flex: 0 0 250px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border-right: 1px solid #ddd;
+}
+
+.main-content {
+  flex: 1;
+  padding: 15px;
+}
